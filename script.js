@@ -15,8 +15,13 @@ typeEffect();
 function openGift() {
   document.querySelector(".gift-box").style.display = "none";
   document.getElementById("surprise").classList.remove("hidden");
+
+  // 🎬 CHANGE BACKGROUND
+  document.body.classList.add("after-gift");
+
   startFireworks();
 }
+
 
 /* Countdown */
 const meetDate = new Date("April 2, 2026 00:00:00").getTime();
