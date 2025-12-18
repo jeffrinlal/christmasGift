@@ -85,3 +85,31 @@ h1 {
   from { transform: translateY(0); }
   to { transform: translateY(50%); }
 }
+/* Fireworks canvas */
+#fireworks {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+}
+
+/* Countdown */
+.countdown {
+  margin-top: 25px;
+  padding: 15px;
+  border-radius: 15px;
+  background: rgba(255,255,255,0.15);
+  animation: fadeIn 1.2s ease;
+}
+
+#timer {
+  font-size: 1.4em;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.meet-date {
+  margin-top: 5px;
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
