@@ -172,3 +172,24 @@ body.after-gift {
     url("images/background2.jpg");
 }
 
+.heart {
+  position: fixed;
+  bottom: -20px;
+  font-size: 18px;
+  color: #ff6b8a;
+  animation: floatUp 4s linear forwards;
+  opacity: 0.8;
+}
+
+@keyframes floatUp {
+  from {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-120vh) scale(1.6);
+    opacity: 0;
+  }
+}
+
+
