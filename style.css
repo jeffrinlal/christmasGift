@@ -1,10 +1,15 @@
 body {
   margin: 0;
-  padding: 0;
+  min-height: 100vh;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(#0b1d3a, #1e3c72);
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+
+  display: flex;
+  justify-content: center;   /* ⭐ horizontal center */
+  align-items: center;       /* ⭐ vertical center */
+
   color: white;
-  height: 100vh;
+  text-align: center;        /* ⭐ center ALL text */
   overflow-x: hidden;
 }
 
@@ -25,10 +30,11 @@ h1 {
 
 /* Gift Box */
 .gift-box {
-  font-size: 60px;
-  cursor: pointer;
-  animation: bounce 1.5s infinite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 
 .gift-box p {
   font-size: 14px;
@@ -97,12 +103,11 @@ h1 {
 
 /* Countdown */
 .countdown {
-  margin-top: 25px;
-  padding: 15px;
-  border-radius: 15px;
-  background: rgba(255,255,255,0.15);
-  animation: fadeIn 1.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 
 #timer {
   font-size: 1.4em;
@@ -117,12 +122,12 @@ h1 {
 }
 /* Secret Message */
 .secret-box {
-  margin-top: 25px;
-  padding: 18px;
-  border-radius: 15px;
-  background: rgba(255,255,255,0.15);
-  animation: fadeIn 1.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
+
 
 .secret-box input {
   margin-top: 10px;
@@ -155,7 +160,22 @@ h1 {
   .card {
   position: relative;
   z-index: 2;
+
+  width: 90%;
+  max-width: 420px;
+  padding: 30px;
+
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* ⭐ center EVERYTHING inside */
+  justify-content: center;
 }
+
 
 
 
