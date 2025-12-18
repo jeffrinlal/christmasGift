@@ -3,26 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <title>For My Bebe ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- Fireworks background -->
 <canvas id="fireworks"></canvas>
 
+<!-- PAGE WRAPPER (ONLY CENTER CONTROLLER) -->
 <div class="page">
+
+  <!-- MAIN CARD -->
   <div class="card">
 
     <h1>🎄 Merry Christmas Bebe ❤️</h1>
 
     <p id="typing" class="typing"></p>
 
+    <!-- Gift -->
     <div class="gift-box" onclick="openGift()">
       🎁
       <span>Tap to open your gift</span>
     </div>
 
+    <!-- Hidden Surprise -->
     <div id="surprise" class="hidden">
 
+      <!-- Love Message -->
       <p class="love-text">
         From this Christmas onwards…  
         <br><br>
@@ -36,7 +44,10 @@
         No distance. No fear.  
         Just you and me 🤍  
         <br><br>
-        <strong>Forever yours,<br>— Your pattu 💕</strong>
+        <strong>
+          Forever yours,<br>
+          — Your pattu 💕
+        </strong>
       </p>
 
       <!-- Countdown -->
@@ -51,7 +62,11 @@
         <h2>🔒 Secret Message</h2>
         <p class="hint">Hint: What you call me ❤️</p>
 
-        <input type="password" id="secretInput" placeholder="Enter secret word">
+        <input
+          type="password"
+          id="secretInput"
+          placeholder="Enter secret word"
+        >
         <button onclick="unlockSecret()">Unlock 💌</button>
 
         <p id="secretMessage" class="hidden secret-text">
@@ -69,15 +84,19 @@
 
       <!-- Photos -->
       <div class="gallery">
-        <img src="images/photo1.jpg">
-        <img src="images/photo2.jpg">
-        <img src="images/photo3.jpg">
+        <img src="images/photo1.jpg" alt="Memory 1">
+        <img src="images/photo2.jpg" alt="Memory 2">
+        <img src="images/photo3.jpg" alt="Memory 3">
       </div>
 
     </div>
+    <!-- END surprise -->
 
   </div>
+  <!-- END card -->
+
 </div>
+<!-- END page -->
 
 <script src="script.js"></script>
 </body>
